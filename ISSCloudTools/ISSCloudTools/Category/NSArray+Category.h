@@ -11,7 +11,7 @@
 
 - (NSUInteger)safeIndexOfObject:(id)anObject;
 
-// 数组转成json 字符串
+/// 数组转成json 字符串
 - (NSString *)toJSONStringForArray;
 
 
