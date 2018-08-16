@@ -93,7 +93,8 @@
 }
 
 //去掉前后空格
-- (NSString *)trimmedString{
+- (NSString *)trimmedString
+{
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet decimalDigitCharacterSet]];
 }
 

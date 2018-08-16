@@ -29,29 +29,29 @@
  
  @param fontSize 字体
  @param width 最大宽度
- @return <#return value description#>
+ @return return value description
  */
-- (CGFloat  ) heightWithFontSize:(CGFloat)fontSize width:(CGFloat)width;
+- (CGFloat) heightWithFontSize:(CGFloat)fontSize width:(CGFloat)width;
 
 /**
  计算文字宽度
 
  @param fontSize 字体
  @param maxHeight 最大高度
- @return <#return value description#>
+ @return return value description
  */
-- (CGFloat  ) widthWithFontSize:(CGFloat)fontSize height:(CGFloat)maxHeight;
+- (CGFloat) widthWithFontSize:(CGFloat)fontSize height:(CGFloat)maxHeight;
 /**
  抹除小数末尾的0
 
- @return <#return value description#>
+ @return return value description
  */
 - (NSString*) removeUnwantedZero;
 
 /**
  //去掉前后空格
 
- @return <#return value description#>
+ @return return value description
  */
 - (NSString*) trimmedString;
 

@@ -2,6 +2,7 @@
 #import "NSMutableDictionary+Category.h"
 
 @implementation NSMutableDictionary (Category)
+
 - (void)safeSetObject:(id)obj forKeyedSubscript:(id<NSCopying>)key
 {
     if (!key) {
