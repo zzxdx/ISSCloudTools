@@ -7,15 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E0805B321251D5C00391A14 /* YQLRUManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0805A321251D5C00391A14 /* YQLRUManager.m */; };
-		7E0805B421251D5C00391A14 /* YQDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0805A421251D5C00391A14 /* YQDiskCache.m */; };
-		7E0805B521251D5C00391A14 /* YQMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0805A521251D5C00391A14 /* YQMemoryCache.m */; };
-		7E0805B621251D5C00391A14 /* YQCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0805A921251D5C00391A14 /* YQCacheManager.m */; };
-		7E0805B721251D5C00391A14 /* YQNetworkingCodeCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0805AD21251D5C00391A14 /* YQNetworkingCodeCheck.m */; };
-		7E0805B921251D5C00391A14 /* YQNetworking+RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0805B121251D5C00391A14 /* YQNetworking+RequestManager.m */; };
-		7E0805BA21251D5C00391A14 /* YQNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0805B221251D5C00391A14 /* YQNetworking.m */; };
 		7E08060F21254DED00391A14 /* UILabel+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E08060E21254DED00391A14 /* UILabel+Create.m */; };
-		7E08061B21255CF800391A14 /* ISSCodeCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E08061A21255CF800391A14 /* ISSCodeCheck.m */; };
+		7E38A75E213693EC00CB3AF6 /* ISSTestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E38A75D213693EC00CB3AF6 /* ISSTestTool.m */; };
 		7E43DD2C20A3DF00005900C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E43DD2B20A3DF00005900C3 /* AppDelegate.m */; };
 		7E43DD2F20A3DF00005900C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E43DD2E20A3DF00005900C3 /* ViewController.m */; };
 		7E43DD3220A3DF00005900C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E43DD3020A3DF00005900C3 /* Main.storyboard */; };
@@ -44,26 +37,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7E0805A121251D5C00391A14 /* YQNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQNetworking.h; sourceTree = "<group>"; };
-		7E0805A321251D5C00391A14 /* YQLRUManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQLRUManager.m; sourceTree = "<group>"; };
-		7E0805A421251D5C00391A14 /* YQDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQDiskCache.m; sourceTree = "<group>"; };
-		7E0805A521251D5C00391A14 /* YQMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQMemoryCache.m; sourceTree = "<group>"; };
-		7E0805A621251D5C00391A14 /* YQCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQCacheManager.h; sourceTree = "<group>"; };
-		7E0805A721251D5C00391A14 /* YQDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQDiskCache.h; sourceTree = "<group>"; };
-		7E0805A821251D5C00391A14 /* YQLRUManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQLRUManager.h; sourceTree = "<group>"; };
-		7E0805A921251D5C00391A14 /* YQCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQCacheManager.m; sourceTree = "<group>"; };
-		7E0805AA21251D5C00391A14 /* YQMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQMemoryCache.h; sourceTree = "<group>"; };
-		7E0805AC21251D5C00391A14 /* YQNetworkingCodeCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQNetworkingCodeCheck.h; sourceTree = "<group>"; };
-		7E0805AD21251D5C00391A14 /* YQNetworkingCodeCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQNetworkingCodeCheck.m; sourceTree = "<group>"; };
-		7E0805B021251D5C00391A14 /* YQNetworking+RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YQNetworking+RequestManager.h"; sourceTree = "<group>"; };
-		7E0805B121251D5C00391A14 /* YQNetworking+RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YQNetworking+RequestManager.m"; sourceTree = "<group>"; };
-		7E0805B221251D5C00391A14 /* YQNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQNetworking.m; sourceTree = "<group>"; };
 		7E0805F521251ED200391A14 /* MacroDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDefinition.h; sourceTree = "<group>"; };
-		7E0805F621251EF600391A14 /* YQNetMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YQNetMacro.h; sourceTree = "<group>"; };
 		7E08060D21254DED00391A14 /* UILabel+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Create.h"; sourceTree = "<group>"; };
 		7E08060E21254DED00391A14 /* UILabel+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Create.m"; sourceTree = "<group>"; };
-		7E08061921255CF800391A14 /* ISSCodeCheck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISSCodeCheck.h; sourceTree = "<group>"; };
-		7E08061A21255CF800391A14 /* ISSCodeCheck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISSCodeCheck.m; sourceTree = "<group>"; };
+		7E38A75C213693EC00CB3AF6 /* ISSTestTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISSTestTool.h; sourceTree = "<group>"; };
+		7E38A75D213693EC00CB3AF6 /* ISSTestTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISSTestTool.m; sourceTree = "<group>"; };
 		7E43DD2720A3DEFF005900C3 /* ISSCloudTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISSCloudTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E43DD2A20A3DEFF005900C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7E43DD2B20A3DF00005900C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -138,57 +116,10 @@
 		7E08059F2125188E00391A14 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				7E0805A021251D5C00391A14 /* YQNetworking */,
+				7E38A75C213693EC00CB3AF6 /* ISSTestTool.h */,
+				7E38A75D213693EC00CB3AF6 /* ISSTestTool.m */,
 			);
 			path = Tools;
-			sourceTree = "<group>";
-		};
-		7E0805A021251D5C00391A14 /* YQNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				7E0805A121251D5C00391A14 /* YQNetworking.h */,
-				7E0805B221251D5C00391A14 /* YQNetworking.m */,
-				7E0805F621251EF600391A14 /* YQNetMacro.h */,
-				7E0805A221251D5C00391A14 /* Cache */,
-				7E0805AB21251D5C00391A14 /* CodeCheck */,
-				7E0805AF21251D5C00391A14 /* RequestManager */,
-			);
-			path = YQNetworking;
-			sourceTree = "<group>";
-		};
-		7E0805A221251D5C00391A14 /* Cache */ = {
-			isa = PBXGroup;
-			children = (
-				7E0805A621251D5C00391A14 /* YQCacheManager.h */,
-				7E0805A921251D5C00391A14 /* YQCacheManager.m */,
-				7E0805A721251D5C00391A14 /* YQDiskCache.h */,
-				7E0805A421251D5C00391A14 /* YQDiskCache.m */,
-				7E0805A821251D5C00391A14 /* YQLRUManager.h */,
-				7E0805A321251D5C00391A14 /* YQLRUManager.m */,
-				7E0805AA21251D5C00391A14 /* YQMemoryCache.h */,
-				7E0805A521251D5C00391A14 /* YQMemoryCache.m */,
-			);
-			path = Cache;
-			sourceTree = "<group>";
-		};
-		7E0805AB21251D5C00391A14 /* CodeCheck */ = {
-			isa = PBXGroup;
-			children = (
-				7E0805AC21251D5C00391A14 /* YQNetworkingCodeCheck.h */,
-				7E0805AD21251D5C00391A14 /* YQNetworkingCodeCheck.m */,
-				7E08061921255CF800391A14 /* ISSCodeCheck.h */,
-				7E08061A21255CF800391A14 /* ISSCodeCheck.m */,
-			);
-			path = CodeCheck;
-			sourceTree = "<group>";
-		};
-		7E0805AF21251D5C00391A14 /* RequestManager */ = {
-			isa = PBXGroup;
-			children = (
-				7E0805B021251D5C00391A14 /* YQNetworking+RequestManager.h */,
-				7E0805B121251D5C00391A14 /* YQNetworking+RequestManager.m */,
-			);
-			path = RequestManager;
 			sourceTree = "<group>";
 		};
 		7E08060A21254D0200391A14 /* Foundation */ = {
@@ -370,32 +301,25 @@
 				7E43DD6820A3DF19005900C3 /* NSObject+Swizzle.m in Sources */,
 				7E43DD6620A3DF19005900C3 /* UITextField+Helper.m in Sources */,
 				7E43DD6520A3DF19005900C3 /* NSMutableString+Category.m in Sources */,
-				7E08061B21255CF800391A14 /* ISSCodeCheck.m in Sources */,
 				7E43DD7120A3DF19005900C3 /* NSMutableDictionary+Category.m in Sources */,
 				7E43DD7620A3DF19005900C3 /* UIBarButtonItem+SXCreate.m in Sources */,
-				7E0805B921251D5C00391A14 /* YQNetworking+RequestManager.m in Sources */,
 				7E43DD7420A3DF19005900C3 /* UITableView+CellAnimation.m in Sources */,
 				7E43DD2F20A3DF00005900C3 /* ViewController.m in Sources */,
 				7E43DD7320A3DF19005900C3 /* NSObject+Category.m in Sources */,
 				7E43DD3A20A3DF01005900C3 /* main.m in Sources */,
 				7E08060F21254DED00391A14 /* UILabel+Create.m in Sources */,
-				7E0805B621251D5C00391A14 /* YQCacheManager.m in Sources */,
-				7E0805B521251D5C00391A14 /* YQMemoryCache.m in Sources */,
 				7E43DD6A20A3DF19005900C3 /* UIImage+Category.m in Sources */,
 				7E43DD6E20A3DF19005900C3 /* UIView+Category.m in Sources */,
 				7E43DD6720A3DF19005900C3 /* NSString+RegexCheck.m in Sources */,
 				7E43DD6920A3DF19005900C3 /* NSArray+Category.m in Sources */,
 				7E4A019F213688BC002E0D46 /* ISSTestView.m in Sources */,
-				7E0805B721251D5C00391A14 /* YQNetworkingCodeCheck.m in Sources */,
 				7E43DD6D20A3DF19005900C3 /* NSMutableAttributedString+Add.m in Sources */,
 				7E43DD6B20A3DF19005900C3 /* UIView+Frame.m in Sources */,
-				7E0805B321251D5C00391A14 /* YQLRUManager.m in Sources */,
 				7E43DD6C20A3DF19005900C3 /* UIButton+Category.m in Sources */,
 				7E43DD7220A3DF19005900C3 /* NSDictionary+Category.m in Sources */,
 				7E43DD2C20A3DF00005900C3 /* AppDelegate.m in Sources */,
-				7E0805BA21251D5C00391A14 /* YQNetworking.m in Sources */,
-				7E0805B421251D5C00391A14 /* YQDiskCache.m in Sources */,
 				7E43DD7020A3DF19005900C3 /* NSString+Category.m in Sources */,
+				7E38A75E213693EC00CB3AF6 /* ISSTestTool.m in Sources */,
 				7E43DD6F20A3DF19005900C3 /* UIViewController+Alert.m in Sources */,
 				7E43DD7520A3DF19005900C3 /* NSMutableArray+Category.m in Sources */,
 			);
