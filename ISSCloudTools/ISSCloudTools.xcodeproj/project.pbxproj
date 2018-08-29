@@ -109,6 +109,7 @@
 		7E43DD6220A3DF19005900C3 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		7E43DD6320A3DF19005900C3 /* NSMutableArray+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Category.m"; sourceTree = "<group>"; };
 		7E43DD6420A3DF19005900C3 /* UIBarButtonItem+SXCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+SXCreate.m"; sourceTree = "<group>"; };
+		7E4A019C21367FA9002E0D46 /* ISSCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISSCategory.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +287,7 @@
 			children = (
 				7E08060A21254D0200391A14 /* Foundation */,
 				7E08060B21254D1100391A14 /* UIKit */,
+				7E4A019C21367FA9002E0D46 /* ISSCategory.h */,
 			);
 			path = Category;
 			sourceTree = "<group>";
