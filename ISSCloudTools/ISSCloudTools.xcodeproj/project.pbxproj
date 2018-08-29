@@ -40,6 +40,7 @@
 		7E43DD7420A3DF19005900C3 /* UITableView+CellAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E43DD5F20A3DF19005900C3 /* UITableView+CellAnimation.m */; };
 		7E43DD7520A3DF19005900C3 /* NSMutableArray+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E43DD6320A3DF19005900C3 /* NSMutableArray+Category.m */; };
 		7E43DD7620A3DF19005900C3 /* UIBarButtonItem+SXCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E43DD6420A3DF19005900C3 /* UIBarButtonItem+SXCreate.m */; };
+		7E4A019F213688BC002E0D46 /* ISSTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4A019E213688BC002E0D46 /* ISSTestView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +111,8 @@
 		7E43DD6320A3DF19005900C3 /* NSMutableArray+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Category.m"; sourceTree = "<group>"; };
 		7E43DD6420A3DF19005900C3 /* UIBarButtonItem+SXCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+SXCreate.m"; sourceTree = "<group>"; };
 		7E4A019C21367FA9002E0D46 /* ISSCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISSCategory.h; sourceTree = "<group>"; };
+		7E4A019D213688BC002E0D46 /* ISSTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISSTestView.h; sourceTree = "<group>"; };
+		7E4A019E213688BC002E0D46 /* ISSTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISSTestView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 		7E08059E2125188500391A14 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				7E4A019D213688BC002E0D46 /* ISSTestView.h */,
+				7E4A019E213688BC002E0D46 /* ISSTestView.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -380,6 +385,7 @@
 				7E43DD6E20A3DF19005900C3 /* UIView+Category.m in Sources */,
 				7E43DD6720A3DF19005900C3 /* NSString+RegexCheck.m in Sources */,
 				7E43DD6920A3DF19005900C3 /* NSArray+Category.m in Sources */,
+				7E4A019F213688BC002E0D46 /* ISSTestView.m in Sources */,
 				7E0805B721251D5C00391A14 /* YQNetworkingCodeCheck.m in Sources */,
 				7E43DD6D20A3DF19005900C3 /* NSMutableAttributedString+Add.m in Sources */,
 				7E43DD6B20A3DF19005900C3 /* UIView+Frame.m in Sources */,
