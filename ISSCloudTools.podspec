@@ -22,9 +22,9 @@ s.subspec 'Category' do |cat|
     uik.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Category/UIKit/*.{h,m}'
     end
 end
-s.subspec 'Tools' do |too|
-too.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Tools/**/*.{h,m}'
-end
+#s.subspec 'Tools' do |too|
+#    too.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Tools/**/*.{h,m}'
+#end
 s.subspec 'UI' do |ui|
     ui.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/UI/**/*.{h,m}'
 end
