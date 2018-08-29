@@ -1,4 +1,4 @@
-version = "0.0.3";
+version = "0.0.4";
 
 Pod::Spec.new do |s|
 s.name         = "ISSCloudTools"    #存储库名称
@@ -23,10 +23,10 @@ s.subspec 'Category' do |cat|
     end
 end
 s.subspec 'Tools' do |too|
-too.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Tools/**/*{h,m}'
+too.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Tools/**/*.{h,m}'
 end
 s.subspec 'UI' do |ui|
-    ui.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/UI/**/*{h,m}'
+    ui.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/UI/**/*.{h,m}'
 end
 
 
