@@ -13,20 +13,20 @@ s.source       = { :git => "https://github.com/zzxdx/ISSCloudTools.git", :tag =>
 
 
 s.source_files  =  "ISSCloudTools/ISSCloudTools/ISSCloudTool/MacroDefinition.h" #需要托管的源代码路径
-s.subspec 'Category' do |Cat|
-    Cat.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Category/ISSCategory.h'
-    Cat.subspec 'Foundation' do |Fou|
-    Fou.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Category/Foundation/*.{h,m}'
+s.subspec 'Category' do |cat|
+    cat.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Category/ISSCategory.h'
+    cat.subspec 'Foundation' do |fou|
+    fou.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Category/Foundation/*.{h,m}'
     end
-    Cat.subspec 'UIKit' do |UIK|
-    UIK.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Category/UIKit/*.{h,m}'
+    cat.subspec 'UIKit' do |uik|
+    uik.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Category/UIKit/*.{h,m}'
     end
 end
-s.subspec 'Tools' do |Too|
-    Too.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Tools/**/*.{h,m}'
+s.subspec 'Tools' do |too|
+    too.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Tools/*'
 end
-s.subspec 'UI' do |UI|
-    UI.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/UI/**/*.{h,m}'
+s.subspec 'UI' do |ui|
+    ui.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/UI/*'
 end
 
 
