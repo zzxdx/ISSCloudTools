@@ -1,4 +1,4 @@
-version = "0.0.8";
+version = "0.0.9";
 
 Pod::Spec.new do |s|
 s.name         = "ISSCloudTools"    #存储库名称
@@ -29,19 +29,20 @@ s.subspec 'Tools' do |too|
     too.subspec 'HJCountDown' do |hcd|
     hcd.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Tools/HJCountDown/**/*'
     end
+    too.dependency "Toast"
 end
 
 s.subspec 'UI' do |ui|
     ui.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/UI/**/*'
+    ui.dependency "DZNEmptyDataSet"
+    ui.dependency "MJRefresh"
 end
 
 
 s.requires_arc = true #是否支持ARC
 
 #所依赖的第三方库
-s.dependency "Toast"
-s.dependency "DZNEmptyDataSet"
-s.dependency "MJRefresh"
+
 
 
 end
