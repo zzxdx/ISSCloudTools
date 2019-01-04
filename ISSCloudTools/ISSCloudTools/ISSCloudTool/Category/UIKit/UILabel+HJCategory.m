@@ -8,6 +8,7 @@
 
 #import "UILabel+HJCategory.h"
 #import <objc/runtime.h>
+#import "HJLabelHelper.h"
 
 @implementation UILabel (HJCategory)
 #pragma mark - 倒计时
@@ -162,7 +163,7 @@
     label.textColor = color;
     if (text.length > 0)
     {
-        label.frame = [ISSPubfun getLabelRect:label];
+        label.frame = [HJLabelHelper getLabelRect:label];
     }
     return label;
 }
@@ -206,7 +207,7 @@
     label.textColor = color;
     label.textAlignment = alignment;
     if (text.length > 0 && !oneLine) {
-        label.frame = [ISSPubfun getLabelRect:label];
+        label.frame = [HJLabelHelper getLabelRect:label];
     }
     return label;
 }
