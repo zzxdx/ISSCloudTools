@@ -1,4 +1,4 @@
-version = "0.0.5";
+version = "0.0.6";
 
 Pod::Spec.new do |s|
 s.name         = "ISSCloudTools"    #存储库名称
@@ -12,9 +12,9 @@ s.platform     = :ios, "9.0"                  #支持的平台和版本号
 s.source       = { :git => "https://github.com/zzxdx/ISSCloudTools.git", :tag => "#{version}" }         #存储库的git地址，以及tag值
 
 
-s.source_files  =  "ISSCloudTools/ISSCloudTools/ISSCloudTool/MacroDefinition.h" #需要托管的源代码路径
+#s.source_files  =  "ISSCloudTools/ISSCloudTools/ISSCloudTool/MacroDefinition.h" #需要托管的源代码路径
 s.subspec 'Category' do |cat|
-    cat.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Category/ISSCategory.h'
+#cat.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Category/ISSCategory.h'
         cat.subspec 'Foundation' do |fou|
         fou.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Category/Foundation/*.{h,m}'
         end
@@ -23,13 +23,13 @@ s.subspec 'Category' do |cat|
         end
 end
 s.subspec 'Tools' do |too|
-    too.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Tools/*.{h,m}'
+#too.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Tools/*.{h,m}'
         too.subspec 'HJCountDown' do |hcd|
         hcd.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Tools/HJCountDown/*.{h,m}'
         end
 end
 s.subspec 'UI' do |ui|
-    ui.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/UI/**/*.{h,m}'
+    ui.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/UI/**/*'
 end
 
 
