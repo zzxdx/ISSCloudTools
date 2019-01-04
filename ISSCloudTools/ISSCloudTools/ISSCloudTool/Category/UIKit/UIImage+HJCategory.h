@@ -1,7 +1,18 @@
+//
+//  UIImage+HJCategory.h
+//  工程多多
+//
+//  Created by huangjian on 2018/11/27.
+//  Copyright © 2018 com.LinkGap. All rights reserved.
+//
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (Category)
+
+@interface UIImage (HJCategory)
+
+#pragma mark 实现搜索条背景透明化
++ (UIImage*) GetImageWithColor:(UIColor*)color andHeight:(CGFloat)height;
 
 //由颜色生成图片
 + (UIImage *) imageWithColor:(UIColor*)color;
@@ -32,8 +43,8 @@
 
 //图片增加圆角及边框
 - (UIImage *) imageByRoundCornerRadius:(CGFloat)radius
-                          borderWidth:(CGFloat)borderWidth
-                          borderColor:(UIColor *)borderColor;
+                           borderWidth:(CGFloat)borderWidth
+                           borderColor:(UIColor *)borderColor;
 
 //图片转180度
 - (UIImage *)imageByRotate180;
@@ -45,6 +56,7 @@
  *  @return 修改尺寸后的图片
  */
 - (nonnull UIImage *) scaledToFitSize:(CGSize)size;
+
 
 
 @end
@@ -89,3 +101,5 @@
            saturationDeltaFactor:(CGFloat)saturationDeltaFactor
                        maskImage:(UIImage *)maskImage;
 @end
+
+

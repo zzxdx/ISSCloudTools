@@ -2,7 +2,7 @@
 //  MacroDefinition.h
 //  ChargingPoleApp
 //
-//  Created by xiongjw on 2018/4/19.
+//  Created by huangjian on 2018/4/19.
 //  Copyright © 2018年 huawei. All rights reserved.
 //
 
@@ -15,8 +15,6 @@
 
 #define UIColorFromRGBA(rgb,a)      [UIColor colorWithRed:((float)((rgb & 0xFF0000) >> 16))/255.0 green:((float)((rgb & 0xFF00) >> 8))/255.0 blue:((float)(rgb & 0xFF))/255.0 alpha:a]
 #define UIColorFromRGB(rgb)         UIColorFromRGBA(rgb,1.0)
-#define ClearColor                  [UIColor clearColor]
-
 //系统版本>=11
 #define IOS11 ([[[UIDevice currentDevice] systemVersion] integerValue] >= 11)
 
@@ -40,29 +38,31 @@
 //判断iPhoneX
 #define IS_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 
+//判断iPhoneXR
+#define IS_iPhoneXR ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size) : NO)
+
+//判断iPhoneXS
+#define IS_iPhoneXS ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+//判断iPhoneXSMax
+#define IS_iPhoneXS_Max ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) : NO)
+
 //屏幕尺寸
 #define kMainScreenFrameRect                     [[UIScreen mainScreen] bounds]
 #define kMainScreenStatusBarFrameRect            [[UIApplication sharedApplication] statusBarFrame]
+
 #define kMainScreenHeight                        kMainScreenFrameRect.size.height
 #define kMainScreenWidth                         kMainScreenFrameRect.size.width
 
-//等比缩放
-#define kWidet(W) (W/375.0f)*kMainScreenWidth
-#define kHigh(H) (H/667.0f)*kMainScreenHeight
 
-#define IPHONE_NAVIGATIONBAR_HEIGHT  (IS_iPhoneX ? 88 : 64)
-#define IPHONE_STATUSBAR_HEIGHT      (IS_iPhoneX ? 44 : 20)
-#define IPHONE_SAFEBOTTOMAREA_HEIGHT (IS_iPhoneX ? 34 : 0)
-#define IPHONE_TOPSENSOR_HEIGHT      (IS_iPhoneX ? 32 : 0)
+#define IPHONE_NAVIGATIONBAR_HEIGHT  ((IS_iPhoneX == YES || IS_iPhoneXR ==YES || IS_iPhoneXS == YES || IS_iPhoneXS_Max == YES) ? 88.0 : 64.0)
+#define IPHONE_STATUSBAR_HEIGHT      ((IS_iPhoneX == YES || IS_iPhoneXR ==YES || IS_iPhoneXS == YES || IS_iPhoneXS_Max == YES) ? 44.0 : 20.0)
+#define IPHONE_SAFEBOTTOMAREA_HEIGHT ((IS_iPhoneX == YES || IS_iPhoneXR ==YES || IS_iPhoneXS == YES || IS_iPhoneXS_Max == YES) ? 34 : 0)
+#define IPHONE_TOPSENSOR_HEIGHT      ((IS_iPhoneX == YES || IS_iPhoneXR ==YES || IS_iPhoneXS == YES || IS_iPhoneXS_Max == YES) ? 32 : 0)
+#define Height_TabBar ((IS_iPhoneX == YES || IS_iPhoneXR == YES || IS_iPhoneXS == YES || IS_iPhoneXS_Max == YES) ? 83.0 : 49.0)
+
 
 //字体
-//字体大小定义
-#define FontSIZE(F)                 [UIFont systemFontOfSize:F]
-//方正黑体简体字体定义
-#define FZFont(F)                   [UIFont fontWithName:@"FZHTJW--GB1-0" size:F]
-//粗体字体大小定义
-#define BoldFontSIZE(F)             [UIFont boldSystemFontOfSize:F]
-
 #define GOTHAM_BOOK(FONT_SIZE)         [UIFont fontWithName:@"Gotham-Book" size:FONT_SIZE] // Gotham Book
 #define HEL_NEUE(FONT_SIZE)         [UIFont fontWithName:@"HelveticaNeue" size:FONT_SIZE] // Helvetica Neue
 #define HEL_NEUE_REGULAR(FONT_SIZE)         [UIFont fontWithName:@"HelveticaNeue" size:FONT_SIZE] // Helvetica Neue Regular
@@ -87,41 +87,33 @@ shared = [[self alloc] init]; \
 return shared; \
 }
 
-//NSUserDefaults相关
-#define NSUSER(def) NSUserDefaults *def=[NSUserDefaults standardUserDefaults]
-#define NSUSER_DEF_NORSET(a,b) [[NSUserDefaults standardUserDefaults]setValue:a forKey:b]
-#define NSUSER_DEF(a)  [[NSUserDefaults standardUserDefaults] valueForKey:a]
-
-//Toasts
 #define HUDMAKE(MESSAGE) [[UIApplication sharedApplication].keyWindow hideAllToasts];\
-[[UIApplication sharedApplication].keyWindow makeToast:MESSAGE duration:2 position:[CSToastManager defaultPosition]];\
-
+[[UIApplication sharedApplication].keyWindow makeToast:MESSAGE duration:2 position:CSToastPositionCenter];\
 #define  HUDHidenAll [[UIApplication sharedApplication].keyWindow hideAllToasts];
 
 
 //获取AppDelegate
 #define ShareApp                    ((AppDelegate *)[[UIApplication sharedApplication] delegate])
-#define KeyWindow [UIApplication sharedApplication].keyWindow
+
+///是否为空或是[NSNull null]
+#define NOTNILANDNULL(_ref)  (((_ref) != nil) && (![(_ref) isEqual:[NSNull null]]))
+#define ISNILORNULL(_ref)   (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]))
+///字符串是否为空
+#define ISSTREMPTY(_ref)    (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]) ||([(_ref)isEqualToString:@""]))
+///数组是否为空
+#define ISARREMPTY(_ref)    (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]) ||([(_ref) count] == 0))
 
 
 #define LoadNibName(nibName) [[[NSBundle mainBundle] loadNibNamed:nibName owner:nil options:nil] firstObject];
-
-//格式化
-#define FormatString(...)       [NSString stringWithFormat: __VA_ARGS__]
-
-//DEBUG  模式下打印日志,当前行
-#ifdef Debug
-#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
-#else
-#   define DLog(...)
-#endif
-
+#define KeyWindow [UIApplication sharedApplication].keyWindow
 
 #define WeakSelf(type)              __weak typeof(type) weak##type = type;
 #define StrongSelf(type)            __strong typeof(type) strong##type = type;
+#define WS(weakSelf)                __weak __typeof(&*self)weakSelf = self;
 
 
 //获取地址
 #define ISSFilePathWithName(filename) [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingString:[NSString stringWithFormat:@"/%@",filename]]
+
 
 #endif /* MacroDefinition_h */

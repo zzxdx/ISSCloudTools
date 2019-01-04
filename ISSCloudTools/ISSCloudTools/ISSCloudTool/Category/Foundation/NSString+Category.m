@@ -95,7 +95,7 @@
 //去掉前后空格
 - (NSString *)trimmedString
 {
-    return [self stringByTrimmingCharactersInSet:[NSCharacterSet decimalDigitCharacterSet]];
+    return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
 }
 
 - (BOOL) isEmptyString

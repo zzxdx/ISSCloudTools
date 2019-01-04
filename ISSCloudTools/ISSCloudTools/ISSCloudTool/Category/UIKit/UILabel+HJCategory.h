@@ -1,12 +1,22 @@
 //
-//  UILabel+Create.h
-//  AXGY
+//  UILabel+HJCategory.h
+//  Lamp
 //
-//  Created by xiongjw on 16/5/26.
-//  Copyright © 2016年 xiongjw. All rights reserved.
+//  Created by huangjian on 2018/11/15.
+//  Copyright © 2018 huawei. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+
+
+
+@interface UILabel (HJCategory)
+
+#pragma mark - 倒计时
+-(void)jk_startTime:(NSInteger )timeout title:(NSString *)tittle waitTittle:(NSString *)waitTittle;
+
+@end
+
 
 @interface UILabel (Create)
 
@@ -39,7 +49,7 @@
 + (UILabel *)oneLineLbWithX:(CGFloat)x
                           y:(CGFloat)y
                    fontSize:(CGFloat)fontSize
-                      color:(UIColor *)color
+                      color:(UIColor *)colorxcgn
                        text:(NSString *)text;
 
 /**
@@ -106,18 +116,43 @@
 @end
 
 
-@interface UILabel (Helper)
 
-+ (CGFloat)getLabelHeight:(CGFloat)contentWidth font:(UIFont *)font text:(NSString *)text;
-+ (CGFloat)getLabelHeight:(UILabel *)label;
+//! Project version number for UILabel-AutomaticWriting.
+FOUNDATION_EXPORT double UILabelAutomaticWritingVersionNumber;
 
-+ (CGSize)getLabelSize:(NSString *)value font:(UIFont *)font;
-+ (CGSize)getLabelSize:(UILabel *)label;
+//! Project version string for UILabel-AutomaticWriting.
+FOUNDATION_EXPORT const unsigned char UILabelAutomaticWritingVersionString[];
 
-+ (CGRect)getLabelRect:(UILabel *)textLabel;
+extern NSTimeInterval const UILabelAWDefaultDuration;
 
-+ (CGRect)getOneLineLabelRect:(UILabel *)textLabel;
+extern unichar const UILabelAWDefaultCharacter;
 
-+ (CGRect)getLimitLabelRect:(UILabel *)label limitLine:(NSInteger)line;
+typedef NS_ENUM(NSInteger, UILabelJKlinkingMode)
+{
+    UILabelJKlinkingModeNone,
+    UILabelJKlinkingModeUntilFinish,
+    UILabelJKlinkingModeUntilFinishKeeping,
+    UILabelJKlinkingModeWhenFinish,
+    UILabelJKlinkingModeWhenFinishShowing,
+    UILabelJKlinkingModeAlways
+};
+
+@interface UILabel (JKAutomaticWriting)
+
+@property (strong, nonatomic) NSOperationQueue *jk_automaticWritingOperationQueue;
+@property (assign, nonatomic) UIEdgeInsets jk_edgeInsets;
+
+- (void)jk_setTextWithAutomaticWritingAnimation:(NSString *)text;
+
+- (void)jk_setText:(NSString *)text automaticWritingAnimationWithBlinkingMode:(UILabelJKlinkingMode)blinkingMode;
+
+- (void)jk_setText:(NSString *)text automaticWritingAnimationWithDuration:(NSTimeInterval)duration;
+
+- (void)jk_setText:(NSString *)text automaticWritingAnimationWithDuration:(NSTimeInterval)duration blinkingMode:(UILabelJKlinkingMode)blinkingMode;
+
+- (void)jk_setText:(NSString *)text automaticWritingAnimationWithDuration:(NSTimeInterval)duration blinkingMode:(UILabelJKlinkingMode)blinkingMode blinkingCharacter:(unichar)blinkingCharacter;
+
+- (void)jk_setText:(NSString *)text automaticWritingAnimationWithDuration:(NSTimeInterval)duration blinkingMode:(UILabelJKlinkingMode)blinkingMode blinkingCharacter:(unichar)blinkingCharacter completion:(void (^)(void))completion;
 
 @end
+

@@ -1,10 +1,39 @@
+//
+//  UIImage+HJCategory.m
+//  工程多多
+//
+//  Created by huangjian on 2018/11/27.
+//  Copyright © 2018 com.LinkGap. All rights reserved.
+//
 
-#import "UIImage+Category.h"
+#import "UIImage+HJCategory.h"
 #import <QuartzCore/QuartzCore.h>
 #import <Accelerate/Accelerate.h>
 #define ORIGINAL_MAX_WIDTH 640.0f
 #define YY_SWAP(_a_, _b_)  do { __typeof__(_a_) _tmp_ = (_a_); (_a_) = (_b_); (_b_) = _tmp_; } while (0)
-@implementation UIImage (Category)
+
+@implementation UIImage (HJCategory)
+
+#pragma mark 实现搜索条背景透明化
++ (UIImage*) GetImageWithColor:(UIColor*)color andHeight:(CGFloat)height{
+    
+    CGRect r = CGRectMake(0.0f, 0.0f, 1.0f, height);
+    
+    UIGraphicsBeginImageContext(r.size);
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    
+    CGContextFillRect(context, r);
+    
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return img;
+    
+}
 
 - (UIImage*)imageRotatedByDegrees:(CGFloat)degrees
 {
@@ -271,6 +300,7 @@
     UIGraphicsEndImageContext();
     return image;
 }
+
 
 @end
 
