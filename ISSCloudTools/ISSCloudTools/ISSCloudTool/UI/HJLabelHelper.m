@@ -7,6 +7,7 @@
 //
 
 #import "HJLabelHelper.h"
+#import "MacroDefinition.h"
 
 @implementation HJLabelHelper
 
