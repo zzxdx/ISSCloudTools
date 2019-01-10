@@ -1,4 +1,4 @@
-version = "0.1.1";
+version = "0.1.2";
 
 Pod::Spec.new do |s|
 s.name         = "ISSCloudTools"    #存储库名称
@@ -12,30 +12,34 @@ s.platform     = :ios, "9.0"                  #支持的平台和版本号
 s.source       = { :git => "https://github.com/zzxdx/ISSCloudTools.git", :tag => "#{version}" }         #存储库的git地址，以及tag值
 
 
-#s.source_files  =  "ISSCloudTools/ISSCloudTools/ISSCloudTool/MacroDefinition.h" #需要托管的源代码路径
+s.source_files  =  "ISSCloudTools/ISSCloudTools/ISSCloudTool/**/*" #需要托管的源代码路径
 
 s.subspec 'Category' do |cat|
 #cat.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Category/ISSCategory.h'
     cat.subspec 'Foundation' do |fou|
-        fou.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Category/Foundation/**/*'
+        fou.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Category/Foundation/*.{h,m}'
     end
     cat.subspec 'UIKit' do |uik|
-        uik.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Category/UIKit/**/*'
+        uik.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Category/UIKit/*.{h,m}'
     end
 end
 
 s.subspec 'Tools' do |too|
-#too.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Tools/**/*'
+too.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Tools/*.{h,m}'
     too.subspec 'HJCountDown' do |hcd|
-    hcd.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Tools/HJCountDown/**/*'
+    hcd.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Tools/HJCountDown/*.{h,m}'
     end
-    too.dependency "Toast"
 end
+too.dependency "Toast"
+
 
 s.subspec 'UI' do |ui|
-    ui.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/UI/**/*'
-    ui.dependency "DZNEmptyDataSet"
-    ui.dependency "MJRefresh"
+ui.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/UI/*.{h,m}'
+        ui.subspec 'Base' do |bas|
+        bas.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/UI/Base/*.{h,m}'
+        end
+        bas.dependency "DZNEmptyDataSet"
+        bas.dependency "MJRefresh"
 end
 
 s.frameworks = "Foundation", "UIKit"
