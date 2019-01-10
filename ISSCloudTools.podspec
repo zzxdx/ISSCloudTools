@@ -15,35 +15,6 @@ s.requires_arc = true #是否支持ARC
 
 s.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/**/*'   #需要托管的源代码路径
 
-// s.public_header_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/MacroDefinition.h'
-// s.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/MacroDefinition.h'   #需要托管的源代码路径
-// s.dependency "Toast"
-
-// s.subspec 'Category' do |cat|
-// cat.public_header_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Category/ISSCategory.h'
-//     cat.subspec 'Foundation' do |fou|
-//         fou.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Category/Foundation/*.{h,m}'
-//     end
-//     cat.subspec 'UIKit' do |uik|
-//         uik.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Category/UIKit/*.{h,m}'
-//     end
-// end
-
-// s.subspec 'Tools' do |too|
-// too.public_header_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Tools/*.{h,m}'
-//     too.subspec 'HJCountDown' do |hcd|
-//     hcd.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Tools/HJCountDown/*.{h,m}'
-//     end
-// end
-
-// s.subspec 'UI' do |ui|
-// ui.public_header_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/UI/*.{h,m}'
-//         ui.subspec 'Base' do |bas|
-//         bas.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/UI/Base/*.{h,m}'
-//         bas.dependency "DZNEmptyDataSet"
-//         bas.dependency "MJRefresh"
-//         end
-// end
 
 
 #所依赖的第三方库
