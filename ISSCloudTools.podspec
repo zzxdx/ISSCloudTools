@@ -42,7 +42,6 @@ end
 s.requires_arc = true #是否支持ARC
 
 #所依赖的第三方库
-ui.dependency "MJRefresh"
 
 
 end
