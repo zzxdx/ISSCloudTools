@@ -15,7 +15,9 @@ s.requires_arc = true #是否支持ARC
 
 s.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/**/*'   #需要托管的源代码路径
 
-
+ s.dependency "DZNEmptyDataSet"
+ s.dependency "MJRefresh"
+ s.dependency "Toast"
 
 #所依赖的第三方库
 
