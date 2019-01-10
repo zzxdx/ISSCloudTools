@@ -7,6 +7,7 @@
 //
 
 #import "HJMJRefreshTableVC.h"
+#define PageSize 10
 
 @interface HJMJRefreshTableVC () <UITableViewDelegate,DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
 
@@ -18,7 +19,7 @@
     [super viewDidLoad];
     
     [self.view addSubview:self.mTableView];
-    self.tableViewStatus = ISSBaseTableViewStatusLoading;
+    self.tableViewStatus = HJBaseTableViewStatusLoading;
     self.resultDataList = [NSMutableArray new];
 }
 
@@ -99,7 +100,7 @@
         
     }
     
-    self.tableViewStatus = ISSBaseTableViewStatusLoadFinish;
+    self.tableViewStatus = HJBaseTableViewStatusLoadFinish;
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath

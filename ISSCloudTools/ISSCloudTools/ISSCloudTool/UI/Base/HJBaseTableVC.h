@@ -35,7 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UITableView *mTableView;
 
 /// tableview状态
-@property (nonatomic, assign) ISSBaseTableViewStatus tableViewStatus;
+@property (nonatomic, assign) HJBaseTableViewStatus tableViewStatus;
 
 /// 是否设置空白页提示 默认YES
 @property (nonatomic, assign) BOOL setEmptyDataSet;

@@ -14,6 +14,10 @@
 #pragma mark 实现搜索条背景透明化
 + (UIImage*) GetImageWithColor:(UIColor*)color andHeight:(CGFloat)height;
 
+/// 修改大小 NSData *newImgData = [img compressWithMaxLength:400 * 320];
+-(NSData *)compressWithMaxLength:(NSUInteger)maxLength;
+
+
 //由颜色生成图片
 + (UIImage *) imageWithColor:(UIColor*)color;
 

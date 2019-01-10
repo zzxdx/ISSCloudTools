@@ -8,6 +8,7 @@
 
 #import "HJCreateUIHelper.h"
 #import "UITextField+HJCategory.h"
+#import "MacroDefinition.h"
 
 @implementation HJCreateUIHelper
 //********************创建TextField***************************/

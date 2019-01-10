@@ -1,4 +1,4 @@
-version = "0.0.9";
+version = "0.1.0";
 
 Pod::Spec.new do |s|
 s.name         = "ISSCloudTools"    #存储库名称
@@ -42,7 +42,7 @@ end
 s.requires_arc = true #是否支持ARC
 
 #所依赖的第三方库
-
+ui.dependency "MJRefresh"
 
 
 end

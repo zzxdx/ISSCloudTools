@@ -7,6 +7,7 @@
 //
 
 #import "HJBaseTableVC.h"
+#import "MacroDefinition.h"
 
 @interface HJBaseTableVC () <UITableViewDataSource, UITableViewDelegate, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
 {
@@ -208,7 +209,7 @@
             
             return YES;
             break;
-        case ISSBaseTableViewStatusLoadFinish:
+        case HJBaseTableViewStatusLoadFinish:
             
             return YES;
             break;
