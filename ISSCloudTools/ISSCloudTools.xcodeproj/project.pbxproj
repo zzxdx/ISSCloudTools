@@ -142,6 +142,7 @@
 		7E39216721E6D7D60026CAA2 /* ISSCloudTool */ = {
 			isa = PBXGroup;
 			children = (
+				7E39217E21E6D7D60026CAA2 /* MacroDefinition.h */,
 				7E39216821E6D7D60026CAA2 /* UI */,
 				7E39217C21E6D7D60026CAA2 /* Tools */,
 				7E39218521E6D7D60026CAA2 /* Category */,
@@ -195,7 +196,6 @@
 				7E39218021E6D7D60026CAA2 /* HJCountDown */,
 				7E39217D21E6D7D60026CAA2 /* HJDataStorage.h */,
 				7E39217F21E6D7D60026CAA2 /* HJDataStorage.m */,
-				7E39217E21E6D7D60026CAA2 /* MacroDefinition.h */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
