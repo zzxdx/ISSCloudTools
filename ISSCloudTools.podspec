@@ -29,17 +29,18 @@ too.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Tools/*.{h,m}'
     too.subspec 'HJCountDown' do |hcd|
     hcd.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Tools/HJCountDown/*.{h,m}'
     end
-end
 too.dependency "Toast"
+end
+
 
 
 s.subspec 'UI' do |ui|
 ui.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/UI/*.{h,m}'
         ui.subspec 'Base' do |bas|
         bas.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/UI/Base/*.{h,m}'
-        end
         bas.dependency "DZNEmptyDataSet"
         bas.dependency "MJRefresh"
+        end
 end
 
 s.frameworks = "Foundation", "UIKit"
