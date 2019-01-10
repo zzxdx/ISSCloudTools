@@ -87,9 +87,9 @@ shared = [[self alloc] init]; \
 return shared; \
 }
 
-#define HUDMAKE(MESSAGE) [[UIApplication sharedApplication].keyWindow hideAllToasts];\
-[[UIApplication sharedApplication].keyWindow makeToast:MESSAGE duration:2 position:CSToastPositionCenter];\
-#define  HUDHidenAll [[UIApplication sharedApplication].keyWindow hideAllToasts];
+//#define HUDMAKE(MESSAGE) [[UIApplication sharedApplication].keyWindow hideAllToasts];\
+//[[UIApplication sharedApplication].keyWindow makeToast:MESSAGE duration:2 position:CSToastPositionCenter];\
+//#define  HUDHidenAll [[UIApplication sharedApplication].keyWindow hideAllToasts];
 
 
 //获取AppDelegate
