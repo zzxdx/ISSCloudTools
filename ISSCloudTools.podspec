@@ -20,6 +20,7 @@ s.subspec 'Category' do |cat|
     end
     cat.subspec 'UIKit' do |uik|
     uik.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/Category/UIKit/*.{h,m}'
+    uik.dependency 'ISSCloudTools/ISSCloudTools/ISSCloudTool/UI/HJLabelHelper'
     end
 end
 s.subspec 'Tools' do |too|
@@ -33,6 +34,8 @@ s.subspec 'UI' do |ui|
     ui.subspec 'Base' do |basee|
     basee.source_files = 'ISSCloudTools/ISSCloudTools/ISSCloudTool/UI/Base/*.{h,m}'
     end
+    ui.dependency 'ISSCloudTools/ISSCloudTools/ISSCloudTool/MacroDefinition.h'
+
 end
 
 
